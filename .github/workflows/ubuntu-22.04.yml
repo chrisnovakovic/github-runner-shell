@@ -1,0 +1,10 @@
+name: Ubuntu 22.04
+on: workflow_dispatch
+jobs:
+  shell:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Start tmate session
+        uses: mxschmitt/action-tmate@v3
+        with:
+          limit-access-to-actor: true
