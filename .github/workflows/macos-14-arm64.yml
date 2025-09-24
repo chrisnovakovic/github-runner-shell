@@ -1,0 +1,10 @@
+name: macOS 14 Arm64
+on: workflow_dispatch
+jobs:
+  shell:
+    runs-on: macos-14-xlarge
+    steps:
+      - name: Start tmate session
+        uses: mxschmitt/action-tmate@v3
+        with:
+          limit-access-to-actor: true

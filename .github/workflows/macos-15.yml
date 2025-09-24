@@ -1,0 +1,10 @@
+name: macOS 15
+on: workflow_dispatch
+jobs:
+  shell:
+    runs-on: macos-15-large
+    steps:
+      - name: Start tmate session
+        uses: mxschmitt/action-tmate@v3
+        with:
+          limit-access-to-actor: true
